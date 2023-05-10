@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nosqlnfac.rpr">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../1618520391_36-phonoteka_org-p-zadnii-fon-gorod-41.jpg" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="151.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nFactorial School">
+            <font>
+                <Font name="Stencil" size="32.0" />
+            </font>
+        </Text>
+        <Button fx:id="nextButton" layoutX="462.0" layoutY="361.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="122.0" text="Repair">
+            <font>
+                <Font name="Stencil" size="12.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Text fill="#fffcfc" layoutX="14.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose information:">
+            <font>
+                <Font name="Stencil" size="26.0" />
+            </font>
+        </Text>
+        <MenuButton fx:id="monthBut" layoutX="308.0" layoutY="183.0" mnemonicParsing="false" text="information">
+            <items>
+                <MenuItem fx:id="NameMB" mnemonicParsing="false" text="Name" />
+                <MenuItem fx:id="SurnameMB" mnemonicParsing="false" text="Surname" />
+                <MenuItem fx:id="DateMB" mnemonicParsing="false" text="Date of birth" />
+                <MenuItem fx:id="NationMB" mnemonicParsing="false" text="Nation" />
+                <MenuItem fx:id="RegMB" mnemonicParsing="false" text="Region" />
+                <MenuItem fx:id="profMB" mnemonicParsing="false" text="Profession" />
+                <MenuItem fx:id="gmailMB" mnemonicParsing="false" text="Gmail Addres" />
+                <MenuItem fx:id="numberMB" mnemonicParsing="false" text="Phone Number" />
+                <MenuItem fx:id="photoMB" mnemonicParsing="false" text="Photo" />
+            </items>
+            <font>
+                <Font name="Stencil" size="12.0" />
+            </font>
+        </MenuButton>
+        <Text fx:id="fixText" fill="WHITE" layoutX="32.0" layoutY="331.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo">
+            <font>
+                <Font name="Stencil" size="26.0" />
+            </font>
+        </Text>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="134.0" layoutY="237.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../gray-background-7131-98db5e6ffc4972baa4087760291cbc3e@1x.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="sndBut" layoutX="173.0" layoutY="261.0" mnemonicParsing="false" opacity="0.0" prefHeight="24.0" prefWidth="122.0" text="Send Photo">
+         <font>
+            <Font name="Stencil" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+        <TextArea fx:id="nameArr" layoutX="110.0" layoutY="61.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextArea>
+      <Text fx:id="fixText1" fill="WHITE" layoutX="32.0" layoutY="91.0" opacity="0.96" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="fixText121" fill="WHITE" layoutX="28.0" layoutY="132.0" opacity="0.96" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail Address:">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="gmailAddr" layoutX="234.0" layoutY="107.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <TextArea fx:id="fixArea" layoutX="156.0" layoutY="302.0" opacity="0.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <Button fx:id="chngBut" layoutX="392.0" layoutY="309.0" mnemonicParsing="false" opacity="0.0" prefHeight="24.0" prefWidth="122.0" text="Change">
+         <font>
+            <Font name="Stencil" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea fx:id="dayTXT" layoutX="26.0" layoutY="342.0" opacity="0.0" prefHeight="38.0" prefWidth="56.0" promptText="Day!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <MenuButton fx:id="monthMB" layoutX="95.0" layoutY="349.0" mnemonicParsing="false" opacity="0.0" text="Month">
+         <items>
+            <MenuItem fx:id="Jan" mnemonicParsing="false" text="January" />
+            <MenuItem fx:id="feb" mnemonicParsing="false" text="February" />
+            <MenuItem fx:id="matr" mnemonicParsing="false" text="Mart" />
+            <MenuItem fx:id="april" mnemonicParsing="false" text="April" />
+            <MenuItem fx:id="may" mnemonicParsing="false" text="May" />
+            <MenuItem fx:id="june" mnemonicParsing="false" text="June" />
+            <MenuItem fx:id="jule" mnemonicParsing="false" text="jule" />
+            <MenuItem fx:id="aug" mnemonicParsing="false" text="August" />
+            <MenuItem fx:id="sept" mnemonicParsing="false" text="September" />
+            <MenuItem fx:id="photoMB1" mnemonicParsing="false" text="October" />
+            <MenuItem fx:id="nov" mnemonicParsing="false" text="November" />
+            <MenuItem fx:id="dec" mnemonicParsing="false" text="December" />
+         </items>
+         <font>
+            <Font name="Stencil" size="12.0" />
+         </font>
+      </MenuButton>
+      <TextArea fx:id="yearTXT" layoutX="182.0" layoutY="342.0" opacity="0.0" prefHeight="38.0" prefWidth="56.0" promptText="Year!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+    </children>
+</AnchorPane>

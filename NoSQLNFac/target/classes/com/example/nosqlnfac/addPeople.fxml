@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nosqlnfac.addClass">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../1618520391_36-phonoteka_org-p-zadnii-fon-gorod-41.jpg" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="151.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nFactorial School">
+            <font>
+                <Font name="Stencil" size="32.0" />
+            </font>
+        </Text>
+        <Button fx:id="nextButton" layoutX="462.0" layoutY="361.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="122.0" text="Next">
+            <font>
+                <Font name="Stencil" size="12.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Text fill="#fffcfc" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:  ">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="nameText" layoutX="112.0" layoutY="77.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <Text fill="WHITE" layoutX="32.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname:">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="surnameText" layoutX="166.0" layoutY="121.0" prefHeight="38.0" prefWidth="200.0" promptText="Text here!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <Text fill="WHITE" layoutX="32.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth:">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="dayText" layoutX="236.0" layoutY="164.0" prefHeight="32.0" prefWidth="57.0" promptText="DAY!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextArea>
+      <MenuButton fx:id="monthBut" layoutX="299.0" layoutY="168.0" mnemonicParsing="false" text="MONTH">
+        <items>
+          <MenuItem fx:id="janMB" mnemonicParsing="false" text="January" />
+          <MenuItem fx:id="febMB" mnemonicParsing="false" text="February " />
+            <MenuItem fx:id="matrMB" mnemonicParsing="false" text="March" />
+            <MenuItem fx:id="AprMB" mnemonicParsing="false" text="April" />
+            <MenuItem fx:id="mayMB" mnemonicParsing="false" text="May" />
+            <MenuItem fx:id="juneMB" mnemonicParsing="false" text="June" />
+            <MenuItem fx:id="juleMB" mnemonicParsing="false" text="July" />
+            <MenuItem fx:id="augMB" mnemonicParsing="false" text="August" />
+            <MenuItem fx:id="sepMB" mnemonicParsing="false" text="September" />
+            <MenuItem fx:id="octMB" mnemonicParsing="false" text="October" />
+            <MenuItem fx:id="novMB" mnemonicParsing="false" text="November" />
+            <MenuItem fx:id="decMB" mnemonicParsing="false" text="December" />
+        </items>
+         <font>
+            <Font name="Stencil" size="12.0" />
+         </font>
+      </MenuButton>
+      <TextArea fx:id="yearText" layoutX="379.0" layoutY="164.0" prefHeight="32.0" prefWidth="57.0" promptText="YEAR!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <Text fill="WHITE" layoutX="32.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nation:">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="nationText" layoutX="136.0" layoutY="209.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <Text fill="WHITE" layoutX="33.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Region:">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="regTatxt" layoutX="136.0" layoutY="252.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <Text fill="WHITE" layoutX="32.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profession:">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="profText" layoutX="200.0" layoutY="296.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+    </children>
+</AnchorPane>

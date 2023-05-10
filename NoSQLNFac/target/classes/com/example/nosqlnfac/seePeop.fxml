@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nosqlnfac.seePeop">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../1618520391_36-phonoteka_org-p-zadnii-fon-gorod-41.jpg" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="151.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nFactorial School">
+            <font>
+                <Font name="Stencil" size="32.0" />
+            </font>
+        </Text>
+        <Button fx:id="menuBut" layoutX="506.0" layoutY="361.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="78.0" text="Menu">
+            <font>
+                <Font name="Stencil" size="12.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ImageView fx:id="image" fitHeight="107.0" fitWidth="200.0" layoutX="429.0" layoutY="238.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../gray-background-7131-98db5e6ffc4972baa4087760291cbc3e@1x.jpg" />
+            </image>
+        </ImageView>
+        <TextArea fx:id="nameArr" layoutX="92.0" layoutY="62.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextArea>
+        <Text fx:id="fixText1" fill="WHITE" layoutX="14.0" layoutY="91.0" opacity="0.96" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+            <font>
+                <Font name="Stencil" size="26.0" />
+            </font>
+        </Text>
+        <Text fx:id="fixText121" fill="WHITE" layoutX="300.0" layoutY="91.0" opacity="0.96" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail:">
+            <font>
+                <Font name="Stencil" size="26.0" />
+            </font>
+        </Text>
+        <TextArea fx:id="gmailAddr" layoutX="385.0" layoutY="66.0" prefHeight="15.0" prefWidth="200.0" promptText="Text here!">
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextArea>
+        <Button fx:id="seeBut" layoutX="481.0" layoutY="114.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="78.0" text="See">
+            <font>
+                <Font name="Stencil" size="12.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Text fx:id="nameTxt" fill="WHITE" layoutX="21.0" layoutY="131.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name;Ruslan">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="date" fill="WHITE" layoutX="21.0" layoutY="183.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth;08 August 2004">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="nat" fill="WHITE" layoutX="22.0" layoutY="213.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nation">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="reg" fill="WHITE" layoutX="22.0" layoutY="243.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Region">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="proff" fill="WHITE" layoutX="22.0" layoutY="269.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profession">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="gmail" fill="WHITE" layoutX="22.0" layoutY="297.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail ">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="phone" fill="WHITE" layoutX="22.0" layoutY="323.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="photo" fill="WHITE" layoutX="460.0" layoutY="226.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="surname" fill="WHITE" layoutX="22.0" layoutY="157.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname;Duisenbek">
+         <font>
+            <Font name="Stencil" size="26.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
